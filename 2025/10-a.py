@@ -23,7 +23,7 @@ with open("./data/10-real.txt") as file:
 for idx, g in enumerate(G):
     start = "." * len(g)
     seen = set([start])
-    queue = [("." * len(g), 0)]
+    queue = [(start, 0)]
     while queue:
         p, i = queue.pop(0)
         for b in B[idx]:
